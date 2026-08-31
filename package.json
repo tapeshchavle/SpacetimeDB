@@ -10,7 +10,7 @@
     "run-all": "pnpm -r -F ./crates/bindings-typescript -F ./crates/bindings-typescript/examples/quickstart-chat -F ./crates/bindings-typescript/test-app -F ./docs -F \"./templates/**\" run",
     "format": "pnpm run-all format && prettier eslint.config.js --write",
     "lint": "pnpm run-all lint && prettier eslint.config.js --check",
-    "build": "pnpm run-all build",
+    "build": "node api.js && pnpm run-all build",
     "test": "pnpm run-all test",
     "generate": "pnpm run-all generate",
     "clean": "pnpm -r exec rimraf dist .tsbuildinfo coverage"
