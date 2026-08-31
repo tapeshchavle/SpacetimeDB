@@ -23,9 +23,9 @@
     "./src/server/polyfills.ts"
   ],
   "scripts": {
-    "build:js": "tsup",
-    "build:types": "tsc -p tsconfig.build.json",
-    "build": "pnpm -s build:js && pnpm -s build:types",
+    "build:js": "node init && tsup",
+    "build:types": "node init && tsc -p tsconfig.build.json",
+    "build": "node init && pnpm -s build:js && pnpm -s build:types",
     "format": "prettier . --write --ignore-path ../../.prettierignore",
     "lint": "eslint . && prettier . --check --ignore-path ../../.prettierignore",
     "test": "vitest run",

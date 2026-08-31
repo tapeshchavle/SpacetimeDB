@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "demo": "tsx src/demo.ts",
-    "dev": "vite",
-    "build": "tsc",
+    "dev": "node init && vite",
+    "build": "node init && tsc",
     "preview": "vite preview",
     "prep": "tsx src/init/init-all.ts",
     "down": "docker compose down || exit 0",

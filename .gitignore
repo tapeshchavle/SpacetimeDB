@@ -87,11 +87,9 @@ web_modules
 .yarn-integrity
 
 # dotenv environment variable files
-.env
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -168,8 +166,6 @@ linux-target/
 *.pdb
 
 ### VisualStudioCode ###
-.vscode/*
-.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -267,3 +263,7 @@ nul
 
 # Any local file
 *.local
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
